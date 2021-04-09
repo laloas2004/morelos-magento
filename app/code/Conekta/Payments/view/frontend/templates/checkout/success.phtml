@@ -1,0 +1,44 @@
+<?php /** @var $block \Conekta\Payments\Block\Info\Success*/ ?>
+
+<div class="checkout-success">
+    <?php if (in_array($block->getMethod(), ["conekta_oxxo", "conekta_spei"])): $data = $block->getOfflineInfo(); ?>
+
+        <h5><?php echo __('Instructions:'); ?></h5>
+        <p><?php echo __($block->getInstructions($data["type"])); ?></p>
+
+        <table class="data" style="margin: 0; -webkit-margin-start: 0;">
+            <tbody>
+            <?php
+            switch ($data["type"]):
+                case "oxxo":
+                    ?>
+                    <tr>
+                        <td><strong><?php echo __('Reference Number:'); ?></strong><br><?php echo $data["data"]["reference"]; ?></td>
+                    </tr>
+                    <tr>
+                        <td><strong><?php echo __('Expires at:'); ?></strong><br><?php echo date("Y-m-d", (integer) $data["data"]["expires_at"]); ?></td>
+                    </tr>
+                    <?php
+                    break;
+                case "spei":
+                    ?>
+                    <tr>
+                        <td><strong><?php echo __('CLABE:'); ?></strong><br><?php echo $data["data"]["clabe"]; ?></td>
+                    </tr>
+                    <tr>
+                        <td><strong><?php echo __('Bank Name:'); ?></strong><br><?php echo $data["data"]["bank_name"]; ?></td>
+                    </tr>
+                    <tr>
+                        <td><strong><?php echo __('Expires at:'); ?></strong><br><?php echo date("Y-m-d", (integer) $data["data"]["expires_at"]); ?></td>
+                    </tr>
+                    <tr>
+                        <td><strong><?php echo __('Account owner:'); ?></strong><br><?php echo $block->getAccountOwner(); ?></td>
+                    </tr>
+                    <?php
+                    break;
+            endswitch; ?>
+            </tbody>
+        </table>
+    <?php endif; ?>
+    <p><?php /* @escapeNotVerified */ echo __('We\'ll email you an order confirmation with details and tracking info.') ?></p>
+</div>

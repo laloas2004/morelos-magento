@@ -1,0 +1,38 @@
+<div class="main-container">
+	<div class="ma-corporate">
+		<div class="container-inner">
+			<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('corporate_about')->toHtml(); ?>
+		</div>
+	</div>	
+	
+	<div class="container-inner">
+		<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_top_page8')->toHtml(); ?>
+		<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_home1')->toHtml(); ?>
+	</div>
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Producttab\Block\Producttab')->setTemplate('Plazathemes_Producttab::producttab.phtml')->toHtml();?>
+	<div class="container-inner">
+		<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_home2')->toHtml(); ?>
+	</div>
+	
+	<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category_products1')->toHtml(); ?>
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('Plazathemes_Blog::sidebar/slider.phtml')->toHtml();?>
+	
+	<div class="group-products">
+		<div class="container-inner">
+			<div class="row">
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Newproductslider\Block\Newproductslider')->setTemplate('Plazathemes_Newproductslider::newproductslider.phtml')->toHtml();?>
+				</div>
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+				</div>
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Randomproductslider\Block\Products')->setTemplate('Plazathemes_Randomproductslider::productslider.phtml')->toHtml();?>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+

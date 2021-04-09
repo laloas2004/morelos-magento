@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<alexa>
+    <blocks>
+	
+		<block>
+            <title>Contact us</title>
+            <identifier>contact_us</identifier>
+            <content>
+                    <![CDATA[
+						<div class="contact-us"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6305.678625317825!2d-122.39957047637722!3d37.793805380191266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858063d63a0215%3A0xcba0af2dfe02048f!2s101+California+Street%2C+San+Francisco%2C+CA+94111%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1419099932976" width="100%" height="350"></iframe></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Static</title>
+            <identifier>footer_static</identifier>
+            <content>
+                    <![CDATA[
+						<div class="col-sm-3">
+						<h3>Shop Location&nbsp;</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim erat ut laoreet pharetra.</p>
+						<ul class="add">
+						<li><i class="fa fa-home"></i>Parcel Zoom 287 Cheesequake Road</li>
+						<li><i class="fa fa-phone"></i>(+123) 3536 456</li>
+						<li><i class="fa fa-envelope-square"></i>demo@plazathemes.com</li>
+						</ul>
+						</div>
+						<div class="col-sm-3">
+						<h3>Our Service</h3>
+						<ul class="links">
+						<li class="first"><a href="#">Our Blog</a></li>
+						<li><a href="#">About Our Shop</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Order History</a></li>
+						<li class="last"><a href="#">Secure Shopping</a></li>
+						</ul>
+						</div>
+						<div class="col-sm-3">
+						<h3>Customer service</h3>
+						<ul class="links">
+						<li class="first"><a href="#">Site Map</a></li>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Order History</a></li>
+						<li class="last"><a href="#">My Account</a></li>
+						</ul>
+						</div>
+						<div class="col-sm-3">{{block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" template="subscribe.phtml"}}
+						<h3>Social media</h3>
+						<ul class="link-follow">
+						<li class="first"><a class="twitter fa fa-twitter" title="Twitter" href="https://twitter.com/plazathemes"><span>twitter</span></a></li>
+						<li><a class="google fa fa-google-plus" title="Google" href="#"><span>google </span></a></li>
+						<li><a class="facebook fa fa-facebook" title="Facebook" href="https://www.facebook.com/plazathemes1"><span>facebook</span></a></li>
+						<li><a class="youtube fa fa-youtube" title="Youtube" href="https://www.youtube.com/user/plazathemes"><span>youtube </span></a></li>
+						<li><a class="rss fa fa-rss" href="#"><span>rss</span></a></li>
+						</ul>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Header Shipping</title>
+            <identifier>header_shipping</identifier>
+            <content>
+                    <![CDATA[
+						<p><i class="fa fa-automobile"></i>Free Shipping Everyday &amp; No Sales Tax</p>	
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Payment</title>
+            <identifier>footer_payment</identifier>
+            <content>
+                    <![CDATA[
+						<p><img src="{{media url="wysiwyg/payment.png"}}" alt="" /></p>	
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Block Banner Left</title>
+            <identifier>block_banner_left</identifier>
+            <content>
+                    <![CDATA[
+						<div class="block-left"><a href="#"><img src="{{media url="wysiwyg/banner-left.jpg"}}" alt="" /></a></div>	
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Contact Link</title>
+            <identifier>contact_link</identifier>
+            <content>
+                    <![CDATA[
+						<div class="contact-link">
+						<div class="shop-phone"><span> <strong>Call us :</strong>0123-456-789</span></div>
+						<div class="shop-email"><span><strong>Email : </strong><a href="mailto:sales@yourcompany.com"> sales@yourcompany.com</a></span></div>
+						</div>	
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Link Follow Header</title>
+            <identifier>link_follow_header</identifier>
+            <content>
+                    <![CDATA[
+						<ul class="link-follow">
+						<li class="first"><a class="twitter fa fa-twitter" title="Twitter" href="https://twitter.com/plazathemes"><span>twitter</span></a></li>
+						<li><a class="google fa fa-google-plus" title="Google" href="#"><span>google </span></a></li>
+						<li><a class="facebook fa fa-facebook" title="Facebook" href="https://www.facebook.com/plazathemes1"><span>facebook</span></a></li>
+						<li><a class="youtube fa fa-youtube" title="Youtube" href="https://www.youtube.com/user/plazathemes"><span>youtube </span></a></li>
+						<li><a class="rss fa fa-rss" href="#"><span>rss</span></a></li>
+						<li><a class="fa fa-flickr" href="#"><span>flickr</span></a></li>
+						</ul>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Footer Logo</title>
+            <identifier>footer_logo</identifier>
+            <content>
+                    <![CDATA[
+						<p><img src="{{media url="wysiwyg/logo_footer.png"}}" alt="" /></p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Block Info</title>
+            <identifier>block_info</identifier>
+            <content>
+                    <![CDATA[
+						<div class="static-info">
+						<div class="row">
+						<div class="col col-xs-12 col-sm-4 col-md-4">
+						<div class="info info1"><em class="fa fa-truck"></em>
+						<div class="static_info">
+						<h4>Free shipping</h4>
+						<p>on order over $199</p>
+						</div>
+						</div>
+						</div>
+						<div class="col col-xs-12 col-sm-4 col-md-4">
+						<div class="info info2"><em class="fa fa-history"></em>
+						<div class="static_info">
+						<h4>Money back 100%</h4>
+						<p>With in 30 days</p>
+						</div>
+						</div>
+						</div>
+						<div class="col col-xs-12 col-sm-4 col-md-4">
+						<div class="info info3"><em class="fa fa-gift"></em>
+						<div class="static_info">
+						<h4>Great daily deals</h4>
+						<p>Shop now!</p>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Banner Home 1</title>
+            <identifier>banner_home_1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-home">
+						<div class="row">
+						<div class="col-sm-4">
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/1_1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-sm-4">
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/2_1.jpg"}}" alt="" /></a></div>
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/3_1.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-sm-4">
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/4_1.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Banner Top</title>
+            <identifier>banner_top</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/banner-top.jpg"}}" alt="" /></a></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Category Products Home1</title>
+            <identifier>category_products_home1</identifier>
+            <content>
+                    <![CDATA[
+						<div class="row">
+						<div class="col-sm-6">{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="category" identify="2323" category_id="3" items_default="2" items_desktop="2" items_desktop_small="2" items_tablet="2" items_mobile="1" show_wishlist="1" show_compare="1" row_show="1" template="categorytab/grid.phtml"}}</div>
+						<div class="col-sm-6">{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="category1" identify="23323" category_id="4" items_default="2" items_desktop="2" items_desktop_small="2" items_tablet="2" items_mobile="1" show_wishlist="1" show_compare="1" row_show="1" template="categorytab/grid.phtml"}}</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Design By</title>
+            <identifier>design_by</identifier>
+            <content>
+                    <![CDATA[
+						<p>Design by Plazathemes.com</p>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Menu Links</title>
+            <identifier>pt_menu_links</identifier>
+            <content>
+                    <![CDATA[
+						<div class="pt_menu_link pt_menu">
+						<div class="parentMenu">
+						<ul class="mobilemenu">
+						<li><a href="http://www.plazathemes.com/">all stores</a></li>
+						<li><a href="{{store url="blog"}}">Blog</a></li>
+						<li><a href="{{store url="contact"}}">Contact Us</a></li>
+						<li><a href="{{store direct_url="about-magento-demo-store"}}">About us</a></li>
+						</ul>
+						</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Category Products Home3</title>
+            <identifier>category_products_home3</identifier>
+            <content>
+                    <![CDATA[
+						<div class="row">
+						<div class="col-sm-9">{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="category" identify="2323" category_id="3" items_default="3" items_desktop="3" items_desktop_small="2" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" template="categorytab/grid.phtml"}}</div>
+						<div class="col-sm-3">
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/banner3-11.jpg"}}" alt="" /></a></div>
+						</div>
+						</div>
+						<div class="row">
+						<div class="col-sm-3">
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/banner3-12.jpg"}}" alt="" /></a></div>
+						</div>
+						<div class="col-sm-9">{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="category1" identify="23323" category_id="4" items_default="3" items_desktop="3" items_desktop_small="2" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" template="categorytab/grid.phtml"}}</div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Category Products Home4</title>
+            <identifier>category_products_home4</identifier>
+            <content>
+                    <![CDATA[
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="category" identify="2323" category_id="3" items_default="4" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" template="categorytab/grid.phtml"}}</div>
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/banner4-14.jpg"}}" alt="" /></a></div>
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="category1" identify="23323" category_id="4" items_default="4" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" template="categorytab/grid.phtml"}}</div>
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/banner4-15.jpg"}}" alt="" /></a></div>
+						<div>{{widget type="Plazathemes\Categorytab\Block\CateWidget" title="category2" identify="233323" category_id="5" items_default="4" items_desktop="4" items_desktop_small="3" items_tablet="2" items_mobile="1" show_addtocart="1" show_wishlist="1" show_compare="1" row_show="1" template="categorytab/grid.phtml"}}</div>
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/banner4-16.jpg"}}" alt="" /></a></div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		
+		<block>
+            <title>Banner Top Home4</title>
+            <identifier>banner_top_home4</identifier>
+            <content>
+                    <![CDATA[
+						<div class="banner-top">
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/banner4-11.jpg"}}" alt="" /></a></div>
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/banner4-12.jpg"}}" alt="" /></a></div>
+						<div class="banner-box"><a href="{{store url="electronics.html"}}"><img src="{{media url="wysiwyg/banner4-13.jpg"}}" alt="" /></a></div>
+						</div>
+					]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+						
+    </blocks>
+</alexa>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<alexa>
+        <resource>
+            <title>Ma alexa 1 - Digital Responsive magento theme</title>
+            <identifier>ma-alexa-1-digital-responsive-magento-theme</identifier>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+				<div class="page-content"><em style="display: none;">page-content</em></div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+		
+		 <resource>
+            <title>Ma alexa 2 - Digital Responsive magento theme</title>
+            <identifier>ma-alexa-2-digital-responsive-magento-theme</identifier>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+				<div class="page-content"><em style="display: none;">page-content</em></div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+		
+		 <resource>
+            <title>Ma alexa 3 - Digital Responsive magento theme</title>
+            <identifier>ma-alexa-3-digital-responsive-magento-theme</identifier>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+				<div class="page-content"><em style="display: none;">page-content</em></div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>
+
+		<resource>
+            <title>Ma alexa 4 - Digital Responsive magento theme</title>
+            <identifier>ma-alexa-4-digital-responsive-magento-theme</identifier>
+            <page_layout>1column</page_layout>
+			<content><![CDATA[
+				<div class="page-content"><em style="display: none;">page-content</em></div>
+			]]></content>
+            <is_active>1</is_active>
+        </resource>		
+</alexa>

@@ -1,0 +1,40 @@
+<div class="main-container">
+	<div class="container-inner">
+		<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('corporate_about')->toHtml(); ?>
+	</div>
+	<div class="ma-banner">
+		<div class="container-inner">
+			<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>	
+		</div>
+	</div>
+	
+	<div class="container-inner">
+		<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_home1')->toHtml(); ?>
+	</div>
+	
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Bestsellerproduct\Block\Bestsellerproduct')->setTemplate('Plazathemes_Bestsellerproduct::bestsellerproduct.phtml')->toHtml();?>	
+	<div class="container-inner">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Pricecountdown\Block\Pricecountdown')->setTemplate('Plazathemes_Pricecountdown::saleslider.phtml')->toHtml();?>
+	</div>
+	<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category_products1')->toHtml(); ?>
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('Plazathemes_Blog::sidebar/slider.phtml')->toHtml();?>
+	
+	<div class="group-products">
+		<div class="container-inner">
+			<div class="row">
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Newproductslider\Block\Newproductslider')->setTemplate('Plazathemes_Newproductslider::newproductslider.phtml')->toHtml();?>
+				</div>
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+				</div>
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Randomproductslider\Block\Products')->setTemplate('Plazathemes_Randomproductslider::productslider.phtml')->toHtml();?>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+

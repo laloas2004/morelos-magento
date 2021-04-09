@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Global -->
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="conekta_global_provider" xsi:type="object">Conekta\Payments\Model\Ui\ConfigProvider</item>
+                <!-- Credit Card -->
+                <item name="conekta_cc_provider" xsi:type="object">Conekta\Payments\Model\Ui\CreditCard\ConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!-- Conekta Config -->
+    <type name="Magento\Framework\App\RouterList">
+        <arguments>
+            <argument name="routerList" xsi:type="array">
+                <item name="conektarouter" xsi:type="array">
+                    <item name="class" xsi:type="string">Conekta\Payments\Controller\Router</item>
+                    <item name="disable" xsi:type="boolean">false</item>
+                    <item name="sortOrder" xsi:type="string">22</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- // Conekta Config // -->
+
+    <type name="Conekta\Payments\Block\Info">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item xsi:type="string" name="is_secure_mode">1</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

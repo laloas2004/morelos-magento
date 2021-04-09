@@ -1,0 +1,44 @@
+<div class="main-container">
+	<div class="container-inner">
+		<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('corporate_about')->toHtml(); ?>
+	</div>
+	<div class="ma-banner">
+		<div class="container-inner">
+			<div class="row">
+				<div class="col-sm-8">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+				</div>
+				<div class="col-sm-4">
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_top_page5')->toHtml(); ?>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="container-inner">
+		<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_home1')->toHtml(); ?>
+	</div>
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Producttab\Block\Producttab')->setTemplate('Plazathemes_Producttab::producttab.phtml')->toHtml();?>
+
+	<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category_products_page5')->toHtml(); ?>
+	
+	<div class="group-block">
+		<div class="container-inner">
+			<div class="row">
+				<div class="col-sm-4">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Pricecountdown\Block\Pricecountdown')->setTemplate('Plazathemes_Pricecountdown::saleslider.phtml')->toHtml();?>
+				</div>
+				<div class="col-sm-8">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Categorytop\Block\Categorytop')->setTemplate('Plazathemes_Categorytop::categorytop.phtml')->toHtml();?>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('Plazathemes_Blog::sidebar/slider.phtml')->toHtml();?>
+	
+
+	
+</div>
+
+

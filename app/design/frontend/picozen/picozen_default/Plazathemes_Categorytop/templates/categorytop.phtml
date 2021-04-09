@@ -1,0 +1,71 @@
+	<div class="pt_categorytop catlist">
+	<div class="categorytop-title "><h3><?php echo __('Featured Categories') ?></h3></div>
+
+	<div class="owl-container row">
+	<div class="content">
+	<?php
+
+	$catListTop = $block->getCatListTop();
+	$rows = 2;
+	$i = 0;
+	$last = count($catListTop);
+	foreach ($catListTop as $catTop) {
+		//echo "<pre>"; print_r($catTop->getData()); echo "</pre>"; 
+		$thumb_nail_url = $block -> getThumbUrl($catTop->getThumbPopular());
+		?>
+		<?php if($i++%$rows==0) { ?> <div class="product_row"> <?php } ?>
+			<div class="catgrid">
+				<h4 class="name"><a  href="<?php echo $catTop->getUrl() ?>">
+						<?php echo $catTop->getName() ?>
+					</a></h4>
+				<div class="catlist_images">
+					<a href="<?php echo $catTop->getUrl() ?>">
+						<img class="thumb" src="<?php echo $thumb_nail_url; ?>" alt="<?php echo $catTop->getName(); ?>" />
+					</a>
+				</div>
+				<div class="catlist_name">
+					
+					<?php
+						$CatList = $block->getCatByPath((int) $catTop->getId(), $catTop->getPath());
+						$j = 0;
+						echo '<ul>';
+						foreach ($CatList as $cat) {
+						  if($j >= 5) break;
+							echo '<li><a href="#">'.$cat->getName().'</a></li>';
+							$j++;
+						}
+						echo '</ul>';
+						$j++; 
+					?>
+				</div>
+			</div>
+		<?php if($i%$rows==0 || $i == count($catListTop)) { ?> </div> <?php }?>
+	   <?php
+	}
+	?>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">
+require([
+  "jquery",
+  "owlcarousel/minjs"
+ ], function($,owlCarousel){
+	
+   $(".pt_categorytop .content").owlCarousel({ 
+		autoPlay : false,
+		slideSpeed : 500,
+		navigation : false,
+		stopOnHover : true,
+		pagination : true,
+		items : 2,
+		itemsDesktop : [1199,2],
+		itemsDesktopSmall : [991,2],
+		itemsTablet: [767,1],
+		itemsMobile : [479,1],
+		addClassActive : true,
+		scrollPerPage:false
+   });
+   
+});
+</script>   

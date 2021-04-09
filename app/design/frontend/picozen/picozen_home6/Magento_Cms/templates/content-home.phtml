@@ -1,0 +1,27 @@
+<div class="main-container">
+	<div class="container-inner">
+		<div class="row">
+			<div class="col-sm-3 group-products">
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Hozmegamenu\Block\Menu')->setTemplate('Plazathemes_Hozmegamenu::verticalmegamenu.phtml')->toHtml();?>
+				
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('corporate_about2')->toHtml(); ?>
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('about_us2')->toHtml(); ?>
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Newproductslider\Block\Newproductslider')->setTemplate('Plazathemes_Newproductslider::newproductslider.phtml')->toHtml();?>
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block_banner_left')->toHtml(); ?>
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Testimonial\Block\Testimonial')->setTemplate('Plazathemes_Testimonial::testimonial.phtml')->toHtml();?>
+			</div>
+			<div class="col-sm-9">
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+				
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_home1_page6')->toHtml(); ?>
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Producttab\Block\Producttab')->setTemplate('Plazathemes_Producttab::producttab.phtml')->toHtml();?>
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_home2_page6')->toHtml(); ?>
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category_products_page6')->toHtml(); ?>
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('Plazathemes_Blog::sidebar/slider.phtml')->toHtml();?>
+			</div>
+		</div>
+	</div>	
+</div>
+
+
